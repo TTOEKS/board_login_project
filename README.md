@@ -10,20 +10,20 @@ Todo List
 
 - [  ] Make front-end (simple)  
   - [x] Login form  
- - [x] Sign up form  
- - [ ] Board  
- - [ ] CSS Work  
+  - [x] Sign up form  
+  - [ ] Board  
+  - [ ] CSS Work  
   
-[x] Construct Database  
-[ ] Make Back-end (PHP)  
-  [x] Connecting Database to Front-end  
-  [ ] Login form  
-  [x] Sign up form  
-  [ ] Board  
+- [x] Construct Database  
+- [ ] Make Back-end (PHP)  
+  - [x] Connecting Database to Front-end  
+  - [ ] Login form  
+  - [x] Sign up form  
+  - [ ] Board  
   
-[ ] Make Back-end (JSP)  
-  [ ] Connecting Database to Front-end  
-  [ ] Login form  
-  [ ] Sign up form  
-  [ ] Board  
+- [ ] Make Back-end (JSP)  
+  - [ ] Connecting Database to Front-end  
+  - [ ] Login form  
+  - [ ] Sign up form  
+  - [ ] Board  
   
