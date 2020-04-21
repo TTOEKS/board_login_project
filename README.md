@@ -9,10 +9,10 @@ Todo List
 
 
 [  ] Make front-end (simple)  
-  [x] Login form  
-  [x] Sign up form  
-  [ ] Board  
-  [ ] CSS Work  
+ - [x] Login form  
+ - [x] Sign up form  
+ - [ ] Board  
+ - [ ] CSS Work  
   
 [x] Construct Database  
 [ ] Make Back-end (PHP)  
