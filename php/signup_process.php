@@ -7,9 +7,9 @@
     $contry = $_POST["userContry"];
 
     $dbHost = "localhost";
-    $dbName = "web_project";
-    $dbUser = "admin";
-    $dbPassword = "yu16969696yu!";
+    $dbName = "db_name";
+    $dbUser = "dbuser";
+    $dbPassword = "db_password";
 
     // Connect DB
     // $con = new PDO('mysql:host=localhost;dbname=opentutorials', 'root','123456', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
