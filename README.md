@@ -8,7 +8,7 @@ but I forgot uploaded github while 3 days, I upload 3 days work result at 2020.0
 Todo List
 
 
-[ ] Make front-end (simple)  
+[  ] Make front-end (simple)  
   [x] Login form  
   [x] Sign up form  
   [ ] Board  
