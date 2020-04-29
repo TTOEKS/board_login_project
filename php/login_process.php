@@ -9,9 +9,9 @@
 <?php
 
        $dbHost = "localhost";
-       $dbName = "db_name";
-       $dbUser = "db_name";
-       $dbPassword = "dbPassword";
+       $dbName = "web_project";
+       $dbUser = "admin";
+       $dbPassword = "yu16969696yu!";
 
        $input_id = $_POST["userID"];
        $input_password = $_POST["userPassword"];
