@@ -76,7 +76,7 @@
                     
                     // TItle part adjust a tag
                     if($j == 1){?>
-                    <td> <a href="view?idx=<?php echo $board_present[$i][0]?>">
+                    <td> <a href="view.php?idx=<?php echo $board_present[$i][0]?>">
                     <?php echo $board_present[$i][$j] ?> 
                     </a>
                     <?php    
