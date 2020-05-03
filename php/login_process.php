@@ -7,11 +7,10 @@
 
 
 <?php
-
        $dbHost = "localhost";
-       $dbName = "web_project";
-       $dbUser = "admin";
-       $dbPassword = "yu16969696yu!";
+       $dbName = "dbname";
+       $dbUser = "dbuser";
+       $dbPassword = "dbpassword!";
 
        $input_id = $_POST["userID"];
        $input_password = $_POST["userPassword"];
