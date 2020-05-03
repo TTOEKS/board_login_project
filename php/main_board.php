@@ -22,9 +22,9 @@
         $name = $_SESSION["userName"];
         $id = session_id();
         $dbHost = "localhost";
-        $dbName = "web_project";
-        $dbId = "admin";
-        $dbPassword= "yu16969696yu!";
+        $dbName = "dbname";
+        $dbId = "dbid";
+        $dbPassword= "dbpassword";
 
 
         echo ("안녕하세요 $name 님! <br>");
