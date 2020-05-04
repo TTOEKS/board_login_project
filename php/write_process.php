@@ -45,5 +45,4 @@
     }finally{
         header("Location: main_board.php");
     }
-
 ?>
