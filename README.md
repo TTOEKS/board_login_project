@@ -11,10 +11,10 @@ Todo List
 - [ ] Make front-end (simple)  
   - [x] Login form  
   - [x] Sign up form  
-  - [ ] Board  
-  - [ ] CSS Work  
-  - [ ] Writing form 
+  - [x] Board  
+  - [x] Writing form 
   - [x] View Form
+  - [ ] CSS Work  
   
 - [x] Construct Database
 - [ ] Make Back-end (PHP)  
@@ -23,8 +23,9 @@ Todo List
   - [x] Sign up form  
   - [x] Board  
   - [x] Writer process
-  - [ ] Recommend Function
-  - [x] View Process
+  - [x] Delete process
+  - [x] View process
+  - [ ] Recommends process
   - [ ] Divide board page
   
 - [ ] Make Back-end (JSP)  
