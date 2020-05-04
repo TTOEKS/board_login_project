@@ -18,6 +18,9 @@
     echo "conent: $writen_content <br>";
     echo "date: $writen_date <br> <hr>";
 
+    // for Enter recognzie
+    $writen_content = nl2br($writen_content);
+    
     try{
     $conn = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbId, $dbPassword);
     $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

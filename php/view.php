@@ -84,7 +84,19 @@
         </p>
 
         <p>
-            조회수 <?php echo $update_hits ?> | 추천수 <?php echo $recommends?>
+            조회수 <?php echo $update_hits ?> | 추천수 <?php echo $recommends;
+            
+            // Delete function
+            //	<button type="button" class="navyBtn" onClick="location.href='PAGENAME.html'">
+            if($name == $writer){
+                echo' | 
+                   <button type="button" onClick="location.href=\'deleteFunc.php?idx='; echo $index; 
+                   echo '\'">
+                   삭제
+                   </button>
+                    ';
+            }
+            ?> 
         </p>
 
 
