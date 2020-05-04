@@ -13,9 +13,9 @@
     }
     // DB info
     $dbHost = "localhost";
-    $dbName = "web_project";
-    $dbUser = "admin";
-    $dbPassword = "yu16969696yu!";
+    $dbName = "dbname";
+    $dbUser = "dbid";
+    $dbPassword = "dbpassword";
 
     try{
     // Connect database

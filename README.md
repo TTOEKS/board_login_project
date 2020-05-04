@@ -14,17 +14,17 @@ Todo List
   - [ ] Board  
   - [ ] CSS Work  
   - [ ] Writing form 
-  - [ ] View Form
+  - [x] View Form
   
 - [x] Construct Database
 - [ ] Make Back-end (PHP)  
   - [x] Connecting Database to Front-end  
-  - [ ] Login form  
+  - [x] Login form  
   - [x] Sign up form  
-  - [ ] Board  
-  - [ ] Writer process
+  - [x] Board  
+  - [x] Writer process
   - [ ] Recommend Function
-  - [ ] View Process
+  - [x] View Process
   - [ ] Divide board page
   
 - [ ] Make Back-end (JSP)  
