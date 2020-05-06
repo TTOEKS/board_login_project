@@ -1,11 +1,11 @@
 <?php
     session_start();
 
-    // DB Access info
+    // DB info
     $dbHost = "localhost";
-    $dbName = "web_project";
-    $dbId = "admin";
-    $dbPassword= "yu16969696yu!";
+    $dbName = "dbname";
+    $dbUser = "dbuser";
+    $dbPassword = "dbpassword";
 
     // writer content info
     $writen_title = $_GET["writen_title"];
