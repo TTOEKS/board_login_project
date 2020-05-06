@@ -4,9 +4,9 @@
 
     // DB info
     $dbHost = "localhost";
-    $dbName = "dbname";
-    $dbUser = "dbid";
-    $dbPassword = "dbpassword";
+    $dbName = "web_project";
+    $dbUser = "admin";
+    $dbPassword = "yu16969696yu!";
 
     try{
         // Connect database
@@ -20,14 +20,11 @@
         echo "
         <script> 
         alert('성공적으로 삭제되었습니다!'); 
-        window.location.href = 'main_board.php';
+        window.location.href = '../main_board.php';
         </script>
         ";
         
-
     } catch(Exception $e){
         echo $e;
     }
-
-
 ?>

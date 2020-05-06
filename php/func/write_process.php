@@ -3,9 +3,9 @@
 
     // DB Access info
     $dbHost = "localhost";
-    $dbName = "dbname";
-    $dbId = "dbid";
-    $dbPassword= "dbpassword";
+    $dbName = "web_project";
+    $dbId = "admin";
+    $dbPassword= "yu16969696yu!";
 
     // writer content info
     $writen_title = $_GET["writen_title"];
@@ -22,14 +22,13 @@
     $writen_content = nl2br($writen_content);
     
     try{
+    // Connect DB
     $conn = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbId, $dbPassword);
     $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // $stmt = $conn->prepare("INSERT INTO user_info(user_name, user_id, user_password, user_contry) VALUES(:userName, :userID, :userPassword, :userContry) ");
-
+   
+    // Make query
     $stmt = $conn->prepare("INSERT INTO user_board(btitle, contents, bdate, bwriter) VALUES(:writen_title, :writen_content, :writen_date, :writer)");
-
-    // $stmt -> bindValue(":userName", $name);
     $stmt -> bindValue(":writen_title", $writen_title);
     $stmt -> bindValue(":writen_content", $writen_content);
     $stmt -> bindValue(":writen_date", $writen_date);
@@ -43,6 +42,7 @@
     catch(Exception $e){
 
     }finally{
-        header("Location: main_board.php");
+        header("Location: ../main_board.php");
     }
+
 ?>

@@ -18,7 +18,7 @@
     </script>
     <h1> 글쓰기 </h1>
     <hr>
-    <form action="write_process.php" method="GET">
+    <form action="func/write_process.php" method="GET">
         <table>
             <tr>
                 <td>작성자   </td>

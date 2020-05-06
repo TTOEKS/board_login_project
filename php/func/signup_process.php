@@ -1,26 +1,24 @@
 <?php
-// userName, userPassword, userPasswordConfirm, userContry
+    // userName, userPassword, userPasswordConfirm, userContry
     $name = $_POST["userName"];
     $id = $_POST["userID"];
     $password = $_POST["userPassword"];
     $password_confrom = $_POST["userPasswordConfirm"];
     $contry = $_POST["userContry"];
 
+    // DB info
     $dbHost = "localhost";
-    $dbName = "dbname";
-    $dbUser = "dbid";
-    $dbPassword = "dbpassword";
-
-    // Connect DB
-    // $con = new PDO('mysql:host=localhost;dbname=opentutorials', 'root','123456', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    $dbName = "web_project";
+    $dbUser = "admin";
+    $dbPassword = "yu16969696yu!";
 
     try{
 
+    // Connect DB
     $conn = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
     $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $stmt = $conn->prepare("INSERT INTO user_info(user_name, user_id, user_password, user_contry) VALUES(:userName, :userID, :userPassword, :userContry) ");
-
     $stmt -> bindValue(":userName", $name);
     $stmt -> bindValue(":userID", $id);
     $stmt -> bindValue(":userPassword", $password);
@@ -41,6 +39,6 @@
 
         echo $e;
     } finally{
-        header("Location: login.html");
+        header("Location: ../login.html");
     }
 ?>

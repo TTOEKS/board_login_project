@@ -7,15 +7,17 @@
     $name = $_SESSION["userName"];
     $index = $_GET['idx'];
 
+    // Prevent bad Session 
     if($name == Null|| $name==""){
         echo '<script> alert("세션이 만료되었거나, 불건전한 접근입니다."); </script>';
         location.replace("login.html");
     }
+
     // DB info
     $dbHost = "localhost";
-    $dbName = "dbname";
-    $dbUser = "dbid";
-    $dbPassword = "dbpassword";
+    $dbName = "web_project";
+    $dbUser = "admin";
+    $dbPassword = "yu16969696yu!";
 
     try{
     // Connect database
@@ -43,8 +45,7 @@
     $contents = $boardValues[2];
     $date = $boardValues[3];
     $update_hits = $boardValues[4] + 1;
-    $recommends = $boardValues[5];
-    $writer = $boardValues[6];
+    $writer = $boardValues[5];
     
     // Update hits
     $update_stmt = $conn -> prepare("UPDATE user_board SET hits=:update_hits WHERE bidx=:index");
@@ -84,13 +85,12 @@
         </p>
 
         <p>
-            조회수 <?php echo $update_hits ?> | 추천수 <?php echo $recommends;
+            조회수 <?php echo $update_hits; 
             
             // Delete function
-            //	<button type="button" class="navyBtn" onClick="location.href='PAGENAME.html'">
             if($name == $writer){
                 echo' | 
-                   <button type="button" onClick="location.href=\'deleteFunc.php?idx='; echo $index; 
+                   <button type="button" onClick="location.href=\'func/deleteFunc.php?idx='; echo $index; 
                    echo '\'">
                    삭제
                    </button>
@@ -98,6 +98,8 @@
             }
             ?> 
         </p>
+
+
     <div>
 </body>
 </html>
