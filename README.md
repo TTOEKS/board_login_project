@@ -25,8 +25,9 @@ Todo List
   - [x] Writer process
   - [x] Delete process
   - [x] View process
-  - [ ] Recommends process
-  - [ ] Divide board page
+  - [x] Divide board page
+  - [ ] Modify process
+
   
 - [ ] Make Back-end (JSP)  
   - [ ] Connecting Database to Front-end  
