@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <title> 글 쓰기 </title>
+    <meta charset="UTF-8"/>
 <?php 
     session_start();
     $name = $_SESSION["userName"];?>
