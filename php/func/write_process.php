@@ -3,9 +3,9 @@
 
     // DB Access info
     $dbHost = "localhost";
-    $dbName = "web_project";
-    $dbId = "admin";
-    $dbPassword= "yu16969696yu!";
+    $dbName = "dbname";
+    $dbId = "id";
+    $dbPassword= "password";
 
     // writer content info
     $writen_title = $_GET["writen_title"];
