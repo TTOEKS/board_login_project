@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title> 글 쓰기 </title>
-    <meta charset="UTF-8"/>
 <?php 
     session_start();
     $name = $_SESSION["userName"];?>
@@ -44,5 +41,4 @@
         <input type="button" value="뒤로 가기" formaction="main_board.php">
     </form>
 </body>
-
 </html>

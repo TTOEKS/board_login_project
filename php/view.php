@@ -15,9 +15,9 @@
 
     // DB info
     $dbHost = "localhost";
-    $dbName = "dbname";
-    $dbUser = "dbuser";
-    $dbPassword = "dbpassword";
+    $dbName = "web_project";
+    $dbUser = "admin";
+    $dbPassword = "yu16969696yu!";
 
     try{
     // Connect database
@@ -46,6 +46,9 @@
     $date = $boardValues[3];
     $update_hits = $boardValues[4] + 1;
     $writer = $boardValues[5];
+
+    // for Enter recognzie
+    $contents = nl2br($contents);
     
     // Update hits
     $update_stmt = $conn -> prepare("UPDATE user_board SET hits=:update_hits WHERE bidx=:index");
@@ -72,6 +75,8 @@
 </head>
 
 <body>
+    <a href="main_board.php"><h1> 게시판 </h1></a>
+
     <div class="board_form">
         <h3> <?php echo $title; ?> </h3> 
         <p> 글번호 <?php echo $index ?> | <?php echo $date; ?> </p>
@@ -79,7 +84,7 @@
         <h5> 작성자:  <?php echo $writer ?> </h5>
         <br>
 
-        <p>
+        <p id = "main_contents">
             <?php echo $contents ?>
 
         </p>
@@ -95,6 +100,13 @@
                    삭제
                    </button>
                     ';
+
+                    echo' | 
+                    <button type="button" onClick="location.href=\'func/modifyFunc.php?idx='; echo $index; 
+                    echo '\'">
+                    수정
+                    </button>
+                     ';
             }
             ?> 
         </p>

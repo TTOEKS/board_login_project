@@ -8,9 +8,9 @@
 
     // DB info
     $dbHost = "localhost";
-    $dbName = "dbname";
-    $dbUser = "dbuser";
-    $dbPassword = "dbpassword";
+    $dbName = "web_project";
+    $dbUser = "admin";
+    $dbPassword = "yu16969696yu!";
 
     try{
 

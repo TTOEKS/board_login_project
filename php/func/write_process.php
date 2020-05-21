@@ -1,11 +1,11 @@
 <?php
     session_start();
 
-    // DB info
+    // DB Access info
     $dbHost = "localhost";
-    $dbName = "dbname";
-    $dbUser = "dbuser";
-    $dbPassword = "dbpassword";
+    $dbName = "web_project";
+    $dbId = "admin";
+    $dbPassword= "yu16969696yu!";
 
     // writer content info
     $writen_title = $_GET["writen_title"];
@@ -17,9 +17,6 @@
     echo "title: $writen_title <br>";
     echo "conent: $writen_content <br>";
     echo "date: $writen_date <br> <hr>";
-
-    // for Enter recognzie
-    $writen_content = nl2br($writen_content);
     
     try{
     // Connect DB

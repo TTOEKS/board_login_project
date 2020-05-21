@@ -21,6 +21,8 @@
         page 1 -> (1 - 1) * 10 = 0,  1 * 10 = 10
         page 2 -> (2 - 1) * 10 = 10, 2 * 10 = 20
         page 3 -> (3 - 1) * 10 = 20, 3 * 10 = 30
+
+
   -->
 
     <?php
@@ -36,12 +38,12 @@
         }else{
             $page_num=1;
         }
-
+        
         // DB info
         $dbHost = "localhost";
-        $dbName = "dbname";
-        $dbUser = "dbuser";
-        $dbPassword = "dbpassword";
+        $dbName = "web_project";
+        $dbId = "admin";
+        $dbPassword= "yu16969696yu!";
 
 
         echo ("안녕하세요 $name 님! <br>");
