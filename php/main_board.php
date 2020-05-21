@@ -41,9 +41,9 @@
         
         // DB info
         $dbHost = "localhost";
-        $dbName = "web_project";
-        $dbId = "admin";
-        $dbPassword= "yu16969696yu!";
+        $dbName = "dbname";
+        $dbId = "id";
+        $dbPassword= "password";
 
 
         echo ("안녕하세요 $name 님! <br>");
