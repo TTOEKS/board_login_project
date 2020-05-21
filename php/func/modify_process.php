@@ -7,11 +7,11 @@
     session_start();
     $name = $_SESSION["userName"];
 
-      // DB info
-      $dbHost = "localhost";
-      $dbName = "web_project";
-      $dbUser = "admin";
-      $dbPassword = "yu16969696yu!";
+    // DB info
+    $dbHost = "localhost";
+    $dbName = "dbname";
+    $dbId = "id";
+    $dbPassword= "password";
   
       try{
       // Connect database
