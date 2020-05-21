@@ -8,9 +8,9 @@
 
         // DB info
         $dbHost = "localhost";
-        $dbName = "web_project";
-        $dbUser = "admin";
-        $dbPassword = "yu16969696yu!";
+        $dbName = "dbname";
+        $dbId = "id";
+        $dbPassword= "password";
 
         // get input ID, Password
         $input_id = $_POST["userID"];
